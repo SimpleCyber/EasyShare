@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // axios.get("http://localhost:5000/")
-    axios.get("https://easyshare-y9bh.onrender.com/")
+    axios.get("https://shareitnow-6zno.onrender.com/")
       .then((response) => setData(response.data.message))
       .catch((error) => console.error(error));
   }, []);
