@@ -6,7 +6,8 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/")
+    // axios.get("http://localhost:5000/")
+    axios.get("https://easyshare-y9bh.onrender.com/")
       .then((response) => setData(response.data.message))
       .catch((error) => console.error(error));
   }, []);
