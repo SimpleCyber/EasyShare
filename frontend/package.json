@@ -4,7 +4,11 @@
   "private": true,
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@tailwindcss/forms": "^0.5.10",
     "axios": "^1.7.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "cra-template": "1.2.0",
     "lucide-react": "^0.474.0",
     "react": "^19.0.0",
@@ -37,10 +41,5 @@
       "last 1 safari version"
     ],
     "proxy": "http://localhost:5000"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.1",
-    "tailwindcss-animate": "^1.0.7"
   }
 }

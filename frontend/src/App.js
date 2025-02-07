@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import reportWebVitals from './reportWebVitals';
+import ShareItNow from "./Components/home";
 
 function App() {
   const [data, setData] = useState(null);
@@ -14,8 +15,7 @@ function App() {
 
   return (
     <div>
-      <h1>React Frontend</h1>
-      <p>{data ? data : "Loading..."}</p>
+      <ShareItNow />
     </div>
   );
 }
