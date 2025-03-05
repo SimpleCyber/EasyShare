@@ -11,6 +11,7 @@
     "clsx": "^2.1.1",
     "cra-template": "1.2.0",
     "firebase": "^11.1.0",
+    "framer-motion": "^12.4.10",
     "lucide-react": "^0.471.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

@@ -18,7 +18,7 @@ const FileShareApp = () => {
   const [theme, setTheme] = useState('light');
   const [files, setFiles] = useState([]);
   const [selectedFiles, setSelectedFiles] = useState([]);
-  // const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadProgress, setUploadProgress] = useState(0);
 
   // Theme Toggle
   const toggleTheme = () => {
