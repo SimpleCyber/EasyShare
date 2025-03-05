@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Files</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="<%= theme === 'dark' ? 'dark bg-gray-900 text-white' : 'bg-gray-100 text-gray-800' %>">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6 text-center">
+            Shared Files
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <% files.forEach(function(file) { %>
+                <div class="bg-white shadow rounded-lg p-4 <%= theme === 'dark' ? 'bg-gray-700' : '' %>">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold truncate">
+                            <%= file.filename.split('/').pop() %>
+                        </h3>
+                        <div class="flex space-x-2">
+                            <a href="<%= file.url %>" 
+                               target="_blank" 
+                               class="text-blue-500 hover:text-blue-700">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="<%= file.url %>" 
+                               download 
+                               class="text-green-500 hover:text-green-700">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-500">
+                        Size: <%= (file.bytes / 1024 / 1024).toFixed(2) %> MB
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-sm text-gray-500">
+                These files will expire in 24 hours.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
