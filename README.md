@@ -4,6 +4,8 @@ EasyShare is a web-based file sharing application that allows users to easily up
 
 ![EasyShare Screenshot](image.png)
 
+Project link : https://shareitnow-6zno.onrender.com/
+
 ## Features
 
 - 🌓 Dark/Light theme support
