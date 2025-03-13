@@ -266,7 +266,7 @@ app.post("/create-text", async (req, res) => {
     const result = await cloudinary.uploader.upload(tempFilePath, {
       resource_type: "raw",
       folder: "uploads",
-      public_id: `text-${Date.now()}-${cleanFilename}`
+      public_id: `text-${Date.now()}`,
     });
     
     // Remove temp file
